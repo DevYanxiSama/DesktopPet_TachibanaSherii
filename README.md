@@ -1,23 +1,125 @@
-# DesktopPet_TachibanaSherii
-免费开源的系列桌宠: 橘雪莉
-之后还会制作更多,本项目框架初期代码比较屎,后续会优化!
-允许使用本项目进行自己的桌宠开发(能理解代码的情况下wuw,后续会专门优化这方面)
+# DesktopPet_TachibanaSherii 🎭
 
-**注意事项**
-- 严禁商用本项目
-- 本项目models/下的live2d模型以获得原作者允许后二次传播
+<img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+<img src="https://img.shields.io/badge/python-3.8+-green" alt="Python">
+<img src="https://img.shields.io/badge/live2d-v3-orange" alt="Live2D">
 
-**开始**
-# 1.下载整个项目
-# 2.目录下运行命令:
+**橘雪莉** - 一个基于 PyQt5 和 Live2D 的 AI 桌宠框架
+
+这是**系列桌宠的第一款作品**，后续还会制作更多角色！框架本身也在持续优化中，欢迎大家使用和贡献。
+
+## ✨ 特性
+
+- 🎨 **Live2D 模型** - 支持 Live2D v3 模型，动作自然流畅
+- 🤖 **AI 对话** - 集成 OpenAI API，支持 Function Calling
+- 🎬 **动画系统** - 平滑的动作过渡，丰富的肢体语言
+- 🔧 **配置管理** - 多 API、多模型配置，自动保存
+- 🪟 **窗口特性** - 无边框、透明、置顶、拖动
+
+## ⚠️ 重要声明
+
+### 使用限制
+- ✅ 允许个人学习、研究、非商业使用
+- ✅ 允许基于本项目开发自己的桌宠
+- ❌ **严禁商业使用** - 不得将本项目用于任何商业目的
+
+### 模型版权
+本项目 `models/` 目录下的 Live2D 模型已获得原作者授权进行二次传播：
+- 感谢 **断夏Official** 和 **万童Official** 的创作授权
+- 模型版权归原作者所有，请勿用于其他用途
+
+## 🚀 快速开始
+
+### 环境要求
+- Python 3.8 或更高版本
+- 支持 OpenGL 的显卡
+
+### 安装步骤
+
+1. **克隆项目**
 ```bash
-$ pip install -r requirements.txt
-$ python main.py
-  ```
-# 4.进入设置,配置大模型api,以及将提示词文件拖入,然后保存。
+git clone https://github.com/yourname/DesktopPet_TachibanaSherii.git
+cd DesktopPet_TachibanaSherii
+```
 
-**感谢**
-- live2d-py:一个开源的Python Live2d库 : https://github.com/EasyLive2D/live2d-py
-- live2d的创作者:
-  - 断夏Official : https://space.bilibili.com/36979456
-  - 万童Official : https://space.bilibili.com/1932040601
+2. **安装依赖**
+```bash
+pip install -r requirements.txt
+```
+
+3. **运行程序**
+```bash
+python main.py
+```
+
+4. **配置 API**
+   - 点击右上角「设置」按钮
+   - 配置你的大模型 API 地址和密钥
+   - 拖入提示词文件（可选）
+   - 点击「保存配置」
+
+## 🎮 使用指南
+
+### 基础操作
+- **拖动窗口**：鼠标左键按住任意位置拖动
+- **置顶切换**：点击右上角「T」按钮
+- **退出程序**：点击右上角「退出」按钮
+- **发送消息**：在输入框输入内容，按 Enter 或点击「发送」
+
+### AI 对话
+程序会自动保存对话历史，下次启动时会恢复上次的对话内容。
+
+### Live2D 动作
+AI 会根据对话内容自动触发 Live2D 动作，如抬手、思考、害羞等表情。
+
+## 🏗️ 项目结构
+
+```
+DesktopPet_TachibanaSherii/
+├── main.py              # 主程序入口
+├── config/config.json          # 配置文件
+├── requirements.txt     # 依赖列表
+├── models/              # Live2D 模型目录
+├── log/                 # 日志目录
+└── README.md            # 说明文档
+```
+
+## 🤝 二次开发
+
+如果你想基于本项目开发自己的桌宠：
+
+1. **Fork 本仓库**
+2. **替换模型**：将你的 Live2D 模型放入 `models/` 目录
+3. **修改配置**：调整窗口大小、名称等参数
+4. **自定义动作**：在 `BodyController` 中添加新的动作
+
+> 注意：目前框架代码还在优化中，如有疑问欢迎提 Issue！
+
+## 🙏 致谢
+
+### 开源项目
+- [live2d-py](https://github.com/EasyLive2D/live2d-py) - 优秀的 Python Live2D 库 (MIT License)
+
+### 模型创作者
+- **断夏Official** : https://space.bilibili.com/36979456
+- **万童Official** : https://space.bilibili.com/1932040601
+
+感谢两位授权使用他们的 Live2D 模型！
+
+## 📄 许可证
+
+本项目采用 **MIT 许可证**，但有以下附加限制：
+
+- ✅ 允许自由使用、修改、分发
+- ✅ 允许基于本项目开发桌宠
+- ❌ **禁止商业使用**
+
+模型文件的版权归原作者所有，请尊重创作者的权益。
+
+## 📮 联系方式
+
+- 项目主页：[GitHub](https://github.com/yourname/DesktopPet_TachibanaSherii)
+- 问题反馈：[Issues](https://github.com/yourname/DesktopPet_TachibanaSherii/issues)
+
+---
+**橘雪莉** - 你的专属 AI 桌宠 💝
